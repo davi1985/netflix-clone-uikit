@@ -43,11 +43,6 @@ class HeroHeaderUIView: UIView {
         super.init(frame: frame)
         
         addSubviews()
-//        addSubview(heroImageView)
-//        addGradient()
-//        addSubview(playButton)
-//        addSubview(downloadButton)
-        
         applyContraints()
     }
     
@@ -74,8 +69,7 @@ class HeroHeaderUIView: UIView {
         NSLayoutConstraint.activate(playButtonContraints)
         NSLayoutConstraint.activate(downloadButtonContraints)
     }
-    
-    
+
     private func addGradient() {
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [
